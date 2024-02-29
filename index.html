@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Previsão do Tempo</title>
     <link rel="stylesheet" href="styles.css">
-    <script href="app.js"></script>
+    <script src="app.js"></script>
 </head>
+
 <body>
-    <div>
-        <input placeholder="Digite o nome da cidade">
-        <button>Buscar</button>
-        <h2>Tempo em São Paulo</h2>
-        <p>21º Graus</p>
-        <img src="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1NGZHdCbmRlQ3JOSi1STTN0dDBNX3hBUFNPZ3xBQ3Jtc0tsdlg1d0hzam0yRWhHWHNsY1RqNVNad3VJVm5jcnZaeTdULVZHc2twbEJyRjVRQlVhaHVFM2hKUVZ5YXpwWmVKZEJxVWJWRzd2V1V0MnhXUGltQ0duSUlva0ZSaURERHBYeEQxS2pjNmhpaUl1dGlWRQ&q=https%3A%2F%2Fopenweathermap.org%2Fimg%2Fwn%2F04n.png&v=qxzqEuAOYZ4" alt="icone-info-tempo">Nublado    
-        <p>Umidade 85%</p>
+    <div class="divMaior">
+        <input class="cidadeBusca" placeholder="Digite o nome da cidade">
+        <button class="botaoBusca" onclick="clickonbutton()">
+            <img src="https://www.svgrepo.com/show/488200/find.svg" alt="">
+        </button>
+        <div class="textArea">
+            <h2 class="cidade">Tempo em São Paulo</h2>
+            <p class="temperatura">21ºC</p>
+        <div class="tempo">
+            <img class="imagemWeather" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
+            <p class="previsao">Nublado</p>
+        </div>
+            <p class="umidade">Umidade 85%</p>
+        </div>
     </div>
 </body>
+
 </html>
